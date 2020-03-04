@@ -18,7 +18,7 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.8'
+        python-version: '3.6'
 
     - name: Install Python dependencies
       run: |
@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'test-daaaa'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8a8192fc13574c31aa2e49f0a3d4ea80 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b004585b67c9432f936971dcca431b72 }}
         package: './myapp.zip'
